@@ -16,6 +16,8 @@ def birthdayCakeCandles(candles)
 
 end
 
+fptr = File.open(ENV['OUTPUT_PATH'], 'w')
+
 candles_count = gets.strip.to_i
 
 candles = gets.rstrip.split.map(&:to_i)
